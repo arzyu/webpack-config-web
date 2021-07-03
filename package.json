@@ -20,6 +20,7 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@dr.pogodin/babel-plugin-react-css-modules": "^6.0.11",
+    "@types/react-css-modules": "^4.6.2",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.2",
@@ -34,7 +35,6 @@
   },
   "devDependencies": {
     "@types/node": "^14.17.4",
-    "@types/react-css-modules": "^4.6.2",
     "@types/webpack-dev-server": "^3.11.1",
     "rimraf": "^3.0.2",
     "ts-node": "^10.0.0",

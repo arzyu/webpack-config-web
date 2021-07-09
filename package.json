@@ -22,7 +22,6 @@
     "@dr.pogodin/babel-plugin-react-css-modules": "^6.0.11",
     "@types/react-css-modules": "^4.6.4",
     "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.2",
     "eslint": "^7.30.0",
     "eslint-webpack-plugin": "^2.5.3",

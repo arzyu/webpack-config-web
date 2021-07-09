@@ -1,7 +1,6 @@
 import { resolve } from "path";
 
 import { Configuration } from "webpack";
-import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import EslintWebpackPlugin from "eslint-webpack-plugin";
 
@@ -26,7 +25,8 @@ const config: Configuration = {
   },
   output: {
     filename: devMode ? "[name].js" : "[name].[contenthash:7].js",
-    path: dist
+    path: dist,
+    clean: true
   },
   module: {
     rules: [
@@ -92,7 +92,6 @@ const config: Configuration = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "index.ejs"
     }),

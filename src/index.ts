@@ -88,6 +88,12 @@ const config: Configuration = {
             }
           }
         ]
+      },
+      {
+        test: /\.(ttf|png|apng|svg)$/,
+        use: [
+          { loader: "url-loader" }
+        ]
       }
     ]
   },

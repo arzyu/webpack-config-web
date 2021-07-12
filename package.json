@@ -1,6 +1,6 @@
 {
   "name": "@arzyu/webpack-config-web",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Webpack configuration for site project.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -114,6 +114,7 @@ const config: Configuration = {
   devServer: {
     contentBase: dist,
     host: "0.0.0.0",
+    useLocalIp: true,
     hot: true
   }
 };

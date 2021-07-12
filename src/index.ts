@@ -26,6 +26,7 @@ const config: Configuration = {
   mode: devMode ? "development" : "production",
   output: {
     filename: "[name].[contenthash:7].js",
+    assetModuleFilename: "assets/[name].[contenthash:7][ext]",
     path: dist,
     clean: true
   },
@@ -105,7 +106,7 @@ const config: Configuration = {
       },
       {
         test: /\.(ttf|png|apng|svg)$/,
-        type: "asset/inline"
+        type: "asset/resource"
       }
     ]
   },

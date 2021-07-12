@@ -1,11 +1,10 @@
 import { resolve } from "path";
 
-import { Configuration, WebpackPluginInstance } from "webpack";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import EslintWebpackPlugin from "eslint-webpack-plugin";
-import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
-
 import { resolveTsAliases } from "resolve-ts-aliases";
+import { Configuration, WebpackPluginInstance } from "webpack";
+import HtmlPlugin from "html-webpack-plugin";
+import EslintPlugin from "eslint-webpack-plugin";
+import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 const devMode = process.env.NODE_ENV !== "production";
 
@@ -111,10 +110,10 @@ const config: Configuration = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlPlugin({
       template: "index.ejs"
     }),
-    new EslintWebpackPlugin({
+    new EslintPlugin({
       extensions: ["ts", "tsx"],
       baseConfig: {
         extends: [

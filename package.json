@@ -20,6 +20,7 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@dr.pogodin/babel-plugin-react-css-modules": "^6.0.11",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react-css-modules": "^4.6.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.2",
@@ -28,6 +29,7 @@
     "html-webpack-plugin": "^5.3.1",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
+    "react-refresh": "^0.10.0",
     "resolve-ts-aliases": "^1.0.1",
     "style-loader": "^3.0.0",
     "webpack": "^5.44.0"

@@ -1,8 +1,9 @@
 import { resolve } from "path";
 
-import { Configuration } from "webpack";
+import { Configuration, WebpackPluginInstance } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import EslintWebpackPlugin from "eslint-webpack-plugin";
+import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 import { resolveTsAliases } from "resolve-ts-aliases";
 
@@ -64,8 +65,9 @@ const config: Configuration = {
                   exclude: "node_modules",
                   webpackHotModuleReloading: true,
                   generateScopedName: CSS_MODULES_LOCAL_IDENT_NAME
-                }]
-              ]
+                }],
+                devMode && "react-refresh/babel"
+              ].filter(Boolean)
             }
           }
         ]
@@ -119,8 +121,9 @@ const config: Configuration = {
           "@arzyu/react"
         ]
       }
-    })
-  ],
+    }),
+    devMode && new ReactRefreshPlugin(),
+  ].filter(Boolean) as WebpackPluginInstance[],
   devServer: {
     contentBase: dist,
     host: "0.0.0.0",

@@ -23,6 +23,7 @@ const config: Configuration = {
   entry: {
     index: "./index"
   },
+  mode: devMode ? "development" : "production",
   output: {
     filename: devMode ? "[name].js" : "[name].[contenthash:7].js",
     path: dist,
@@ -116,5 +117,9 @@ const config: Configuration = {
     hot: true
   }
 };
+
+if (devMode) {
+  config.devtool = "eval-cheap-module-source-map";
+}
 
 export default config;

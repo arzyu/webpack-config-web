@@ -30,7 +30,6 @@
     "postcss-preset-env": "^6.7.0",
     "resolve-ts-aliases": "^1.0.1",
     "style-loader": "^3.0.0",
-    "url-loader": "^4.1.1",
     "webpack": "^5.44.0"
   },
   "devDependencies": {

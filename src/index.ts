@@ -25,7 +25,7 @@ const config: Configuration = {
   },
   mode: devMode ? "development" : "production",
   output: {
-    filename: devMode ? "[name].js" : "[name].[contenthash:7].js",
+    filename: "[name].[contenthash:7].js",
     path: dist,
     clean: true
   },

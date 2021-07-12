@@ -29,6 +29,18 @@ const config: Configuration = {
     path: dist,
     clean: true
   },
+  optimization: {
+    runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        }
+      }
+    }
+  },
   module: {
     rules: [
       {

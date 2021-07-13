@@ -9,3 +9,7 @@ Webpack configuration for site project.
 ```shell
 npm add --save-dev @arzyu/webpack-config-web
 ```
+
+## Recommendation
+
+Using [airpack](https://github.com/arzyu/airpack) allows you to share webpack configuration in multiple projects more elegantly, without writing any `webpack.config.*` files.

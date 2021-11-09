@@ -13,7 +13,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@arzyu/webpack-config-common": "^1.0.4",
+    "@arzyu/webpack-config-common": "^2.0.0",
     "html-webpack-plugin": "^5.3.1",
     "webpack-merge": "^5.8.0"
   },
@@ -24,9 +24,9 @@
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
   },
   "repository": {
     "type": "git",

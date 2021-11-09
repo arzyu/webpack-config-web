@@ -13,7 +13,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@arzyu/webpack-config-common": "^2.0.0",
+    "@arzyu/webpack-config-common": "github:arzyu/webpack-config-common#dev",
     "html-webpack-plugin": "^5.5.0",
     "webpack-merge": "^5.8.0"
   },

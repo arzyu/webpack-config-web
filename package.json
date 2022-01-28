@@ -13,15 +13,15 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@arzyu/webpack-config-common": "^2.0.0",
+    "@arzyu/webpack-config-common": "^3.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.7",
+    "@types/node": "^16.11.21",
     "rimraf": "^3.0.2",
     "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "webpack": "^5.62.1",
